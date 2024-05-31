@@ -1,0 +1,474 @@
+/*Esto sirve para ponerle una fuente a las letras.*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+
+/*Aquí en el body le pongo la fuente y tambien la estructura y el fondo de la página.*/
+
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(113, 227, 229);
+  overflow-x: hidden;
+}
+
+/*Boton para cambiar el tema*/
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked+.slider {
+  background-color: #522ba7;
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+.dark-theme .content {
+  background-color: #333;
+}
+
+
+.dark-theme .header {
+  background-color: #7c7b7b;
+}
+
+.dark-theme nav ul li a {
+  color: #fff;
+}
+
+.dark-theme .imagen-fondo{
+background-image: url(img/oscuro.png);
+}
+
+.dark-theme .SobreMi h1 {
+  color: #fff;
+}
+
+.dark-theme .asignatura  {
+  color: #fff;
+}
+
+.dark-theme .card__content {
+  background-color: #7c7b7b;
+}
+
+.dark-theme .card__title{
+  color: #fff;
+}
+
+.dark-theme .card__description{
+  color: #fff;
+}
+
+.dark-theme .contactos h2{
+  color: #fff;
+}
+
+.dark-theme .form {
+  background-color: #7c7b7b;
+  box-shadow: #fff;
+}
+
+.dark-theme label {
+  color: white;
+}
+
+.dark-theme .enviar {
+  background-color: #000000;
+  color: white;
+}
+
+.dark-theme footer {
+  background-color: #7c7b7b;
+  color: #fff;
+}
+
+.dark-theme .redes a {
+  color:  white;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Principio */
+.imagen-fondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/fondo-principio.jpg);
+  background-size: cover;
+}
+
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgb(113, 227, 229);
+}
+
+.logo {
+  max-width: 100px;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+
+nav {
+  width: 100%;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  background: rgb(0, 0, 0, 0);
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  padding: 17px;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+
+
+.SobreMi {
+
+  text-align: center;
+  padding: 50px;
+}
+
+.SobreMi h1 {
+  color: rgb(6, 10, 14);
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+/*ZONA DE LAS CARDS*/
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px;
+}
+
+.card {
+  width: 275px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.card::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 10px;
+  bottom: 15px;
+  right: 0;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  transform: rotate(5deg);
+  transition: all 0.1s ease-in;
+}
+
+.card::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 10px;
+  bottom: 15px;
+  left: 0;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  transform: rotate(-5deg);
+  transition: all 0.1s ease-in;
+}
+
+.card:hover:before,
+.card:hover:after {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover:before {
+  transform: rotate(-8deg);
+}
+
+.card:hover:after {
+  transform: rotate(8deg);
+}
+
+.card__img {
+  position: relative;
+  background: #FFFFFF;
+  width: 100%;
+  height: 195px;
+  margin: 10px;
+
+}
+
+.card__img2 {
+  position: relative;
+  background: #FFFFFF;
+  width: 100%;
+  height: 175px;
+}
+
+
+
+.card-int {
+  padding: 20px 0 0 0;
+}
+
+.card-int__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/*--------------------------------------------------*/
+
+/*Esto son las cards con cada uno de mis trabajos de mis asignaturas*/
+
+.asignatura {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-zona {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px;
+}
+
+.card_asig {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border-color: black ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.img1 {
+  
+  max-width: 100%; 
+  max-height: 100%;
+  object-fit: contain;
+  transform: scale(1.9);
+}
+
+.card_asig:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(0, 102, 255);
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card_asig:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+
+
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+/*------------------------------------------*/
+
+/* Definición de Cuadrícula para la Sección de Contacto (contact-section) */
+.contactos {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactos h2 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  padding: 50px 55px;
+  background-color: rgb(0, 102, 255);
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 50%);
+  display: grid;
+  grid-column: 1;
+}
+
+label {
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 2500;
+  margin-bottom: 15px;
+
+}
+
+input,
+textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #a5caeaa4;
+  border: 2px solid #000000;
+  color: #283629;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #283629;
+}
+
+
+
+.enviar {
+  background-color: #50a3e7;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 0;
+  color: #000000;
+  font-size: 20px;
+  box-shadow: 0 0 20px rgba(117, 209, 255, 0.236);
+}
+
+.enviar:hover {
+  background-color: #48b0e0;
+}
+/* -------------------------------------------------------------- */
+/* Y por último el footer con mis redes social */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a2c3f;
+}
+
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-style: none;
+}
+
+.redes a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 10px;
+}
+
+

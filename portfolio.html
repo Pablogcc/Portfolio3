@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <meta name="viewport"
+    content="width=device-width, user-scalable, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  
+
+</head>
+
+<body>
+
+  <section class="imagen-fondo">
+    <header class="header">
+      <div class="logo-pablo">
+        <img src="img/naruto.jpg" alt="Logo de Pablo" class="logo">
+      </div>
+      <nav>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#About_me">Sobre mi</a></li>
+            <li><a href="#Asignaturas">Asignaturas</a></li>
+            <li><a href="#contactos">Mis contactos</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </header>
+
+
+  </section>
+
+
+  <div class="content">
+
+    <section class="SobreMi" id="#About_me">
+      <h1>Sobre mi:</h1>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card__corner"></div>
+          <div class="card__img">
+            <img src="img/carpeta.png" alt="">
+          </div>
+          <div class="card-int">
+            <p class="card-int__title">Informacion sobre mi:</p>
+            <p class src="texto" alt="">Mi nombre es Pablo, tengo 19 años y vivo en Orihuela. Ahora mismo estoy
+              estudiando en El
+              Campico, y estoy estudiando 1ºDAW. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, quis.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__corner"></div>
+          <div class="card__img2">
+            <img src="img/eclipse.jpg" alt="">
+          </div>
+          <div class="card-int">
+            <p class="card-int__title">Mis estudios:</p>
+            <p class="texto">Las asignaturas que estoy dando ahora son: lenguaje de marcas, base de datos, programacion,
+              entornos de desarrollo, sistemas informáticos, inglés y FOL. Yo he hecho el bachiller y la selectividad en
+              Orihuela en
+              el instituto IES Tadher </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ <!-- ---------------------------------- -->
+
+    <h1 class="asignatura" id="#Asignaturas">Asignaturas:</h1>
+    <div class="card-zona">
+      <div class="card_asig">
+
+        <img src="img/entornos.png" alt="" class="img1">
+
+        <div class="card__content">
+          <p class="card__title">Entornos de desarrollo</p>
+          <p class="card__description">En entornos he hecho una tienda virtual donde vendia productos y debía de guardar
+            ya sea productos como clientes y los tickets de compra, y tiene que estar conectada a una base de datos.</p>
+        </div>
+      </div>
+      <div class="card_asig">
+        <img src="img/ldm.png" alt="" class="img1">
+        <div class="card__content">
+          <p class="card__title">LMSGI</p>
+          <p class="card__description">En lenguaje de marcas he tenido que hacer una página web sobre drones, en mi
+            parte tenia que cambiar todo el tema de la pagina de claro a oscuro.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------- -->
+    <div class="card-zona">
+      <div class="card_asig">
+        <img src="img/programacion.png" alt="" class="img1">
+        <div class="card__content">
+          <p class="card__title">Programación</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+      <div class="card_asig">
+        <img src="img/sistemas.png" alt="" class="img1">
+        <div class="card__content">
+          <p class="card__title">Sistemas</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <section class="contactos" id="contacto">
+      <h2>Mis contactos:</h2>
+      <form action="portfolio.php" method="post" class="form">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre..." required="">
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos..." required="">
+        <label for="phone">Telefono</label>
+        <input type="text" name="phone" id="phone" placeholder="Escribe tu numero de telefono..." required="">
+        <label for="gmail">Correo</label>
+        <input type="text" name="gmail" id="gmail" placeholder="Escribe tu correo electrónico(gmail, hotmail...)..." required="">
+        <label for="datos">Datos personales</label>
+        <input type="text" name="datos" id="datos" placeholder="Escribe tus datos personales(dni, codigo postal, datos bancarios)..." required="">
+        <input class="enviar" type="submit" value="Enviar datos">
+      </form>
+    </section>
+    <footer>
+      <h1>Contactos:</h1>
+      <div class="redes">
+        <a href="https://www.instagram.com/ "><i class="ri-instagram-line"></i></a>
+        <a href="https://x.com/?lang=es"><i class="ri-twitter-x-line"></i></a>
+        <a href="https://www.facebook.com/?locale=es_ES"><i class="ri-facebook-fill"></i></a>
+        <a href="https://www.messenger.com/?locale=es_ES"><i class="ri-messenger-line"></i></a>
+      </div>
+
+    </footer>
+
+  </div>
+
+  
+
+
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
