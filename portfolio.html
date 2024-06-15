@@ -9,27 +9,29 @@
   <meta name="viewport"
     content="width=device-width, user-scalable, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-  
+
 
 </head>
 
 <body>
 
-  <section class="imagen-fondo">
+  <section class="imagen-fondo" id="home">
     <header class="header">
       <div class="logo-pablo">
         <img src="img/naruto.jpg" alt="Logo de Pablo" class="logo">
       </div>
       <nav>
-        <div class="menu">
+
+        <div class="menu" id="menu">
           <ul>
             <li><a href="#home">Inicio</a></li>
-            <li><a href="#About_me">Sobre mi</a></li>
+            <li><a href="#About_me">Sobre mí</a></li>
             <li><a href="#Asignaturas">Asignaturas</a></li>
             <li><a href="#contactos">Mis contactos</a></li>
           </ul>
         </div>
       </nav>
+
 
       <label class="switch">
         <input type="checkbox">
@@ -43,7 +45,7 @@
 
   <div class="content">
 
-    <section class="SobreMi" id="#About_me">
+    <section class="SobreMi" id="About_me">
       <h1>Sobre mi:</h1>
 
       <div class="card-container">
@@ -80,9 +82,9 @@
     </section>
 
 
- <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
 
-    <h1 class="asignatura" id="#Asignaturas">Asignaturas:</h1>
+    <h1 class="asignatura" id="Asignaturas">Asignaturas:</h1>
     <div class="card-zona">
       <div class="card_asig">
 
@@ -128,21 +130,19 @@
 
 
 
-    <section class="contactos" id="contacto">
+    <section class="contactos" id="contactos">
       <h2>Mis contactos:</h2>
       <form action="portfolio.php" method="post" class="form">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre..." required="">
-        <label for="apellido">Apellidos</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos..." required="">
-        <label for="phone">Telefono</label>
-        <input type="text" name="phone" id="phone" placeholder="Escribe tu numero de telefono..." required="">
-        <label for="gmail">Correo</label>
-        <input type="text" name="gmail" id="gmail" placeholder="Escribe tu correo electrónico(gmail, hotmail...)..." required="">
-        <label for="datos">Datos personales</label>
-        <input type="text" name="datos" id="datos" placeholder="Escribe tus datos personales(dni, codigo postal, datos bancarios)..." required="">
-        <input class="enviar" type="submit" value="Enviar datos">
-      </form>
+      <label for="name">Nombre:</label>
+      <input id="name" name="name" required>
+      <label for="edad">Edad:</label>
+      <input id="edad" name="edad" required>
+      <label for="email">Correo electrónico:</label>
+      <input id="email" name="email" required>
+      <label for="message">Datos personales:</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit" value="Enviar" id="submitBtn">
+    </form>
     </section>
     <footer>
       <h1>Contactos:</h1>
@@ -157,7 +157,7 @@
 
   </div>
 
-  
+
 
 
   <script src="portfolio.js"></script>

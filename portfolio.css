@@ -147,7 +147,14 @@ background-image: url(img/oscuro.png);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: rgb(113, 227, 229);
+  background-color: rgb(73, 145, 147);
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -160,6 +167,9 @@ background-image: url(img/oscuro.png);
   margin-top: 10px;
   border-radius: 50%;
 }
+
+
+
 
 
 nav {
@@ -191,6 +201,10 @@ nav ul li a {
   letter-spacing: 2px;
 }
 
+
+
+
+/*---------------------------------------------------------------------*/
 
 
 
@@ -425,6 +439,7 @@ textarea {
   border: 2px solid #000000;
   color: #283629;
   outline: none;
+  resize: none;
 }
 
 input::placeholder,
@@ -447,6 +462,8 @@ textarea::placeholder {
 .enviar:hover {
   background-color: #48b0e0;
 }
+
+
 /* -------------------------------------------------------------- */
 /* Y por último el footer con mis redes social */
 footer {

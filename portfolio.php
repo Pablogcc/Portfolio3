@@ -3,14 +3,13 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nombre = $_POST["nombre"];
-    $apellido = $_POST["apellido"];
-    $telefono = $_POST["phone"];
+    $edad = $_POST["edad"];
     $correo = $_POST["gmail"];
     $datos_personales = $_POST["datos"];
 
 
     $archivo = "datos_formulario.txt";
-    $contenido = "Nombre: $nombre\nApellidos: $apellido\nTeléfono: $telefono\nCorreo: $correo\nDatos personales: $datos_personales\n\n";
+    $contenido = "Nombre: $nombre\nEdad: $edad\nCorreo: $correo\nDatos personales: $datos_personales\n\n";
 
 
     $gestor = fopen($archivo, "a");
