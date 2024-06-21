@@ -25,14 +25,14 @@ window.addEventListener('scroll', fixHeader);
 
 /*Advertencia del formulario de los contactos*/
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.form'); // Selecciona el formulario por la clase 'form'
     const nameInput = document.getElementById('name');
     const edadInput = document.getElementById('edad');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault(); // Evita el envío automático del formulario
 
         if (!validateName()) {
@@ -79,4 +79,29 @@ document.addEventListener('DOMContentLoaded', function() {
         const messageValue = messageInput.value.trim();
         return messageValue !== '';
     }
+
+
+
+
+// Esto es del menú hamburguesa
+menuHamburguesa.addEventListener('click', function() {
+    menu.classList.toggle('active'); 
+});
+
+
+const links = menu.querySelectorAll('a');
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function() {
+        menu.classList.remove('active');
+    });
+}
+
+
+document.addEventListener('click', function(event) {
+    const isClickInsideMenu = menu.contains(event.target);
+    const isClickInsideHamburguesa = menuHamburguesa.contains(event.target);
+    if (!isClickInsideMenu && !isClickInsideHamburguesa) {
+        menu.classList.remove('active');
+    }
+});
 });

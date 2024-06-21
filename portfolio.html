@@ -15,46 +15,41 @@
 
 <body>
 
-  <section class="imagen-fondo" id="home">
+  <div class="imagen-fondo" id="home">
     <header class="header">
-      <div class="logo-pablo">
-        <img src="img/naruto.jpg" alt="Logo de Pablo" class="logo">
-      </div>
-      <nav>
-
-        <div class="menu" id="menu">
-          <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#About_me">Sobre mí</a></li>
-            <li><a href="#Asignaturas">Asignaturas</a></li>
-            <li><a href="#contactos">Mis contactos</a></li>
-          </ul>
-        </div>
-      </nav>
+      
+      
+      <div class="mh">
+        <div class="arriba">
+<div id="menuHamburguesa">☰</div>
+</div>
+<nav id="menu" class="menu">
+<a href="#home">Inicio</a>
+<a href="#About_me">Sobre mi</a>
+<a href="#Asignaturas">Asignaturas</a>
+<a href="#contactos">Mis contactos</a>
+</nav>
 
 
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider"></span>
-      </label>
+  <div class="arriba"><h1>Pablo García Celdrán</h1></div>
+<div class="arriba"><label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label></div>
+      
+    </div>
     </header>
     <div class="textos">
-    <h1>PABLO GARCÍA CELDRÁN</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, mollitia ex porro cumque magnam velit nemo
-      doloribus a asperiores quibusdam fugiat assumenda, ipsum dolorum illum hic. Nam, dolores eveniet. Nobis eius,
-      beatae inventore nulla sit eos at ad? Tenetur eligendi unde, hic repellat molestiae delectus ea similique quidem.
-      Odio, at! Voluptatem mollitia alias sint possimus dolor molestiae sapiente modi voluptates exercitationem iusto!
-      Dignissimos labore modi, inventore sed vitae ratione animi error voluptatum debitis quod tempore consequatur
-      itaque mollitia a eligendi nesciunt earum ullam cum distinctio fugit amet aperiam corrupti! Blanditiis unde
-      perferendis maxime sapiente placeat quam consequatur eius, itaque fugiat.</p>
+      <h1>PABLO GARCÍA CELDRÁN</h1>
+      <img src="img/naruto.jpg" alt="">
     </div>
-  </section>
+  </div>
 
 
   <div class="content">
 
     <section class="SobreMi" id="About_me">
-      <h1>Sobre mi:</h1>
+     <div class="mi"> <h1>Sobre mi:</h1></div>
 
       <div class="card-container">
         <div class="card">
@@ -86,6 +81,20 @@
 
           </div>
         </div>
+
+        <div class="card">
+          <div class="card__corner"></div>
+          <div class="card__img3">
+            <img src="img/mando.png" alt="">
+          </div>
+          <div class="card-int">
+            <p class="card-int__title">Mis hobbies:</p>
+            <p class="texto">Mis hobbies son jugar al futbol con mis colegas y jugar a la playstation con mis colegas.
+              También me gusta mucho ver series japonesas, mi serie favorita es Naruto Shippuden.
+            </p>
+
+          </div>
+        </div>
       </div>
     </section>
 
@@ -93,42 +102,50 @@
     <!-- ---------------------------------- -->
 
     <h1 class="asignatura" id="Asignaturas">Asignaturas:</h1>
-    <div class="card-zona">
-      <div class="card_asig">
+    <div class="card-contenedor">
+      <h1>Programación y Lenguaje de Marcas</h1>
+      <div class="card-zona">
+        <div class="card_asig">
 
-        <img src="img/entornos.png" alt="" class="img1">
+          <img src="img/entornos.png" alt="" class="img1">
+          <div class="card__content">
+            <p class="card__title">Programación</p>
+            <p class="card__description">En programación hemos hecho una tienda en la que vendemos comida y agua. Hemos
+              usado los conceptos que hemos dado en nuestros temas.</p>
+          </div>
+        </div>
+        <div class="card_asig">
 
-        <div class="card__content">
-          <p class="card__title">Entornos de desarrollo</p>
-          <p class="card__description">En entornos he hecho una tienda virtual donde vendia productos y debía de guardar
-            ya sea productos como clientes y los tickets de compra, y tiene que estar conectada a una base de datos.</p>
+          <img src="img/ldm.png" alt="" class="img1">
+          <div class="card__content">
+            <p class="card__title">LMSGI</p>
+            <p class="card__description">En lenguaje de marcas he tenido que hacer una página web sobre drones, en mi
+              parte tenia que cambiar todo el tema de la pagina de claro a oscuro.</p>
+          </div>
         </div>
       </div>
-      <div class="card_asig">
-        <img src="img/ldm.png" alt="" class="img1">
-        <div class="card__content">
-          <p class="card__title">LMSGI</p>
-          <p class="card__description">En lenguaje de marcas he tenido que hacer una página web sobre drones, en mi
-            parte tenia que cambiar todo el tema de la pagina de claro a oscuro.</p>
+      <h1>Entornos de Desarrollo y Sistemas Informáticos</h1>
+      <div class="card-zona">
+        <div class="card_asig">
+
+          <img src="img/programacion.png" alt="" class="img1">
+          <div class="card__content">
+            <p class="card__title">Entornos de desarrollo</p>
+            <p class="card__description">En entornos he hecho una tienda virtual donde vendia productos y debía de
+              guardar
+              ya sea productos como clientes y los tickets de compra, y tiene que estar conectada a una base de datos.
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- ---------------------------------- -->
-    <div class="card-zona">
-      <div class="card_asig">
-        <img src="img/programacion.png" alt="" class="img1">
-        <div class="card__content">
-          <p class="card__title">Programación</p>
-          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-      </div>
-      <div class="card_asig">
-        <img src="img/sistemas.png" alt="" class="img1">
-        <div class="card__content">
-          <p class="card__title">Sistemas</p>
-          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="card_asig">
+
+          <img src="img/sistemas.png" alt="" class="img1">
+          <div class="card__content">
+            <p class="card__title">Sistemas informáticos</p>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -142,13 +159,13 @@
       <h2>Mis contactos:</h2>
       <form action="portfolio.php" method="post" class="form">
         <label for="name">Nombre:</label>
-        <input id="name" name="name" required>
+        <input id="name" name="name">
         <label for="edad">Edad:</label>
-        <input id="edad" name="edad" required>
+        <input id="edad" name="edad" >
         <label for="email">Correo electrónico:</label>
-        <input id="email" name="email" required>
+        <input id="email" name="email" >
         <label for="message">Datos personales:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" ></textarea>
         <input type="submit" value="Enviar" id="submitBtn">
       </form>
     </section>
